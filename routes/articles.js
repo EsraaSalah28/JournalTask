@@ -5,4 +5,8 @@ res.render('articles/new')
 res.send('in articles')
 
 })
+router.post('/',(req,res)=>{
+
+    
+})
 module.exports= router

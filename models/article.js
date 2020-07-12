@@ -17,7 +17,8 @@ const articleSchema= new mongoose.Schema({
         type:String,
          required: true,
          unique: true   
-    }
+    },
+    author:{type:mongoose.Schema.Types.ObjectId,ref: 'User'}
 })
 articleSchema.pre('validate', function(next) {
     if (this.title) {
